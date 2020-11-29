@@ -263,6 +263,118 @@
                     android:layout_height="wrap_content" />
 
             </LinearLayout>
+            <!-- Labels Fuerza articulacion opt 1 y opt2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/labels"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:text="Amputated joint strength :"
+                    android:textSize="13sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/labels"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:text="Joint mobility :"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+            <!-- Content Fuerza articulacion opt 1 y opt2 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etFuerzaArticulacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:hint="Enter the value : 1 - 10"
+                    android:textSize="15sp" />
+                <EditText
+                    android:id="@+id/etMovilidadArt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:hint="Enter the value : 1 - 10"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <!-- Labels  opt 3 y opt4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/labels"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:text="Stump sensitivity :"
+                    android:textSize="13sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/labels"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:text="Monopodal balance :"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+            <!-- Content Fuerza articulacion opt 3 y opt4 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etSensibilidadmun"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:hint="Enter the value : 1 - 10"
+                    android:textSize="15sp" />
+                <EditText
+                    android:id="@+id/etEquilibriomon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:hint="Enter the value : 1 - 10"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
             <!-- Labels patient socioeconomic -->
             <LinearLayout
                 android:layout_width="match_parent"
@@ -330,9 +442,9 @@
 
             </LinearLayout>
 
-            <!-- Button Respònse -->
+            <!-- Button Response -->
             <Button
-                android:id="@+id/btnNext"
+                android:id="@+id/btnResponse"
                 android:layout_width="331dp"
                 android:layout_gravity="center_horizontal"
                 android:layout_height="wrap_content"

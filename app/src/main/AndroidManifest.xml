@@ -19,7 +19,8 @@
         android:networkSecurityConfig="@xml/network_security_config"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Actividades.AboutActivity"></activity>
+        <activity android:name=".Actividades.ResultActivity"></activity>
+        <activity android:name=".Actividades.AboutActivity" />
         <activity android:name=".Actividades.MedicalActivity" />
         <activity android:name=".Actividades.PersonalActivity" />
         <activity android:name=".Actividades.DoctorActivity" />

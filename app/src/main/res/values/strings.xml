@@ -75,6 +75,14 @@
         <item>Medium</item>
         <item>Low</item>
     </string-array>
+    <string-array name="amputation">
+        <item>-- Select Option --</item>
+        <item>Transtibial</item>
+        <item>Disarticulated knee</item>
+        <item>Transfemoral</item>
+        <item>Disarticulated hip</item>
+        <item>Hemilpevectomy</item>
+    </string-array>
 
 
 </resources>
