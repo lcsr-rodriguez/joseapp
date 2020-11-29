@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tipo de Pago:"
+            />
+
+        <RadioGroup
+            android:id="@+id/rgtipo"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioefectivoventa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Efectivo"
+                android:checked="true"
+                 />
+
+            <RadioButton
+                android:id="@+id/radiocreditoventa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Credito"
+                 />
+
+            <RadioButton
+                android:id="@+id/radiodebitoventa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Debito"
+                 />
+
+        </RadioGroup>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_weight=".3"
+            android:layout_height="wrap_content"
+            android:text="Valor que paga:" />
+        <EditText
+            android:id="@+id/valorpago"
+            android:layout_width="wrap_content"
+            android:layout_weight=".7"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:inputType="number"
+            android:gravity="center_horizontal" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spinnerbanco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            style="@style/Widget.AppCompat.Spinner.Underlined"
+            android:layout_weight="1"
+            />
+
+
+        <EditText
+            android:id="@+id/numerotarjeta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="# Tarjeta"
+            android:inputType="number"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            />
+
+
+        <EditText
+            android:id="@+id/autorizacion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:editable="false"
+            android:layout_weight="1"
+            android:hint="# Autorización"
+            android:inputType="number"
+            android:gravity="center_horizontal"
+             />
+
+
+    </LinearLayout>
+</LinearLayout>

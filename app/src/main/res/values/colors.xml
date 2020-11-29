@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorPrimaryLight">#B3E5FC</color>
+    <color name="colorAccent">#FF5722</color>
+    <color name="colorAccentPulsado">#FD8662</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="colorIcons">#FFFFFF</color>
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="verdeclaro">#1DE9B6</color>
+    <color name="negro_semitransparente">#B2000000</color>
+    <color name="white">#fafafa</color>
+    <color name="s1">#0097A7</color>
+    <color name="s2">#FF5722</color>
+    <color name="s3">#0097A7</color>
+    <color name="s4">#FF5722</color>
+    <color name="fulltrans">#00000000</color>
+    <color name="boligrafo">#200bb2</color>
+    <color name="link">#7EDB98</color>
+    <color name="main_app">#EF3F20</color>
+    <color name="sombra">#EA8D11</color>
+    <color name="colorBlueT">#6428a2cf</color>
+    <color name="colorPurpleT">#64a130ff</color>
+    <color name="colorPurple">#2D8731</color>
+    <color name="colorBlue">#28A2CF</color>
+    <color name="verdeSuccess">#4EDB1B</color>
+    <color name="labels">#DBA7CB</color>
+    <color name="warning">#B5200C</color>
+    <color name="infosuccess">#349C39</color>
+</resources>

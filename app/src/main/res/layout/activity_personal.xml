@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Actividades.PersonalActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Labels patient -->
+            <TextView
+                android:id="@+id/tvPersonalInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Personal Information"
+                android:textColor="#B63C3C"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/labels"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:text="Name :"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+            <!-- Content patient -->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etPatienteName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:hint="Enter your full name"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <!-- Labels patient ID -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/labels"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:text="Identification ID :"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+            <!-- Content patient ID -->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etPatienteID"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:hint="Enter your ID"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <!-- Labels patient -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/labels"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:text="Age :"
+                    android:textSize="13sp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/labels"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:text="Height :"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+            <!-- Content patient age and height-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etPatienteAge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:hint="Enter your age"
+                    android:textSize="15sp" />
+                <EditText
+                    android:id="@+id/etPatienteHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:inputType="numberSigned"
+                    android:hint="Enter your height (cm)"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <!-- Labels patient Address -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/labels"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:text="Address :"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+            <!-- Content patient Address -->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etPatienteAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:hint="Address"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+            <!-- Labels patient Health Service -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/labels"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:text="Health Service :"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+            <!-- Content patient Health Service -->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etPatienteHealth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="10dp"
+                    android:hint="Enter your health service"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+            <!-- Labels patient conveyance -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:text="Conveyance :"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+            <!-- Content patient Conveyance -->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spConveyance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <!-- Labels patient socioeconomic -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/sombra"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:text="Socioeconomic :"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+            <!-- Content patient socieconomic -->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spSocioeconomic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <!-- Labels patient Amputation type -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/warning"
+                    android:textStyle="bold"
+                    android:paddingLeft="10dp"
+                    android:text="Amputation type :"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+            <!-- Content patient amputation -->
+            <LinearLayout
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                android:paddingLeft="5dp"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spAmputation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!-- Button Respònse -->
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="331dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/bt_uisquare"
+                android:text="Accept"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <!-- End -->
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

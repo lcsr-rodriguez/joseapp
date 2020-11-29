@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_doctor"
+            android:icon="@drawable/doctorinfo"
+            android:title="Doctor Information" />
+        <item
+            android:id="@+id/nav_personal"
+            android:icon="@drawable/doctorinf"
+            android:title="Personal Information" />
+        <item
+            android:id="@+id/nav_medical"
+            android:icon="@drawable/medicalinfo"
+            android:title="Medical Information" />
+
+    </group>
+    <!-- CATEGORIA ISP -->
+    <item android:title="Info">
+        <menu>
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/about"
+                android:title="About us" />
+        </menu>
+    </item>
+<!-- CATEGORIA OTROS -->
+    <!-- <item android:title="Otros">
+        <menu>
+            <item
+                android:id="@+id/nav_settings_server"
+                android:icon="@drawable/settings"
+                android:title="Seleccionar servidor" />
+            <item
+                android:id="@+id/nav_acercade"
+                android:icon="@drawable/about"
+                android:title="Acerca de" />
+            <item
+                android:id="@+id/nav_cerrar_sesion"
+                android:icon="@drawable/exit"
+                android:title="Cerrar sesión" />
+        </menu>
+    </item> -->
+
+</menu>
