@@ -23,6 +23,8 @@ public class ResultActivity extends AppCompatActivity {
     // Table items
     private TextView kTotal,kRecommendations, kIndex, tvMaterial, tvcurrentTime, tvType;
     private int kvalue;
+    // inputs
+    private int fuerza,movilidad,sensibilidad,equilibrio;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -45,39 +47,219 @@ public class ResultActivity extends AppCompatActivity {
     // Determina el valor de K
     public void getKValue(int value) {
 
+        String valuePie, valueRodilla, valueEncaje, valueSujecion;
+
         if(value < 4) {
             //Toast.makeText(this, "K0", Toast.LENGTH_SHORT).show();
-            kIndex.setText("0");
-            kTotal.setText( String.valueOf(value) );
+
         }
         else if(value >= 4 && value <= 12) {
             //Toast.makeText(this, "K1", Toast.LENGTH_SHORT).show();
-            kIndex.setText("1");
-            kTotal.setText( String.valueOf(value) );
-            kRecommendations.setText("SACH type prosthetic foot, single axis foot and constant friction knee.");
+            if(type=="Transtibial")  {
+                valuePie = getPie1(fuerza);
+                valueRodilla = getRodilla1(movilidad);
+                valueEncaje = getEncaje1(sensibilidad);
+                valueSujecion = getSujecion1(equilibrio);
+            }
+            if(type=="Disarticulated knee")  {
+
+            }
+            if(type=="Transfemoral")  {
+
+            }
+            if(type=="Disarticulated hip")  {
+
+            }
+            if(type=="Hemilpevectomy")  {
+
+            }
         }
         else if(value >= 13 && value <= 22) {
             //Toast.makeText(this, "K2", Toast.LENGTH_SHORT).show();
-            kIndex.setText("2");
-            kTotal.setText( String.valueOf(value) );
-            kRecommendations.setText("Flexible and / or multiaxial feet (also monoaxial), constant friction knee.");
+            if(type=="Transtibial")  {
+                valuePie = getPie2(fuerza);
+                valueRodilla = getRodilla2(movilidad);
+                valueEncaje = getEncaje2(sensibilidad);
+                valueSujecion = getSujecion2(equilibrio);
+            }
+            if(type=="Disarticulated knee")  {
+
+            }
+            if(type=="Transfemoral")  {
+
+            }
+            if(type=="Disarticulated hip")  {
+
+            }
+            if(type=="Hemilpevectomy")  {
+
+            }
+
         }
         else if(value >= 23 && value <= 28) {
             //Toast.makeText(this, "K3", Toast.LENGTH_SHORT).show();
-            kIndex.setText("3");
-            kTotal.setText( String.valueOf(value) );
-            kRecommendations.setText("Flexible foot system, feet with energy storage, multi-axis foot or dynamic fluid response, pneumatic control feet and knees.");
+            if(type=="Transtibial")  {
+                valuePie = getPie3(fuerza);
+                valueRodilla = getRodilla3(movilidad);
+                valueEncaje = getEncaje3(sensibilidad);
+                valueSujecion = getSujecion3(equilibrio);
+            }
+            if(type=="Disarticulated knee")  {
+
+            }
+            if(type=="Transfemoral")  {
+
+            }
+            if(type=="Disarticulated hip")  {
+
+            }
+            if(type=="Hemilpevectomy")  {
+
+            }
+
         }
         else if(value >= 29 && value <= 40) {
             //Toast.makeText(this, "K4", Toast.LENGTH_SHORT).show();
-            kIndex.setText("4");
-            kTotal.setText( String.valueOf(value) );
-            kRecommendations.setText("Hydraulic or pneumatic suspension systems.");
+            if(type=="Transtibial")  {
+                valuePie = getPie4(fuerza);
+                valueRodilla = getRodilla4(movilidad);
+                valueEncaje = getEncaje4(sensibilidad);
+                valueSujecion = getSujecion4(equilibrio);
+            }
+            if(type=="Disarticulated knee")  {
+
+            }
+            if(type=="Transfemoral")  {
+
+            }
+            if(type=="Disarticulated hip")  {
+
+            }
+            if(type=="Hemilpevectomy")  {
+
+            }
+
         }
         else{
             //Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
         }
 
+    }
+
+    private String getSujecion1(int equilibrio) {
+        String result = "N.A";
+
+        if(equilibrio >=1 && equilibrio <3){
+            result = "Neoprene";
+        }
+        return result;
+    }
+
+    private String getEncaje1(int sensibilidad) {
+
+        return "HST lace";
+    }
+
+    private String getRodilla1(int movilidad) {
+
+        return "N.A";
+    }
+
+    private String getPie1(int fuerza) {
+
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 3) {
+            result = "SACH foot";
+        }
+        return result;
+    }
+
+    // K2
+    private String getSujecion2(int equilibrio) {
+        String result = "N.A";
+
+        if(equilibrio >=1 && equilibrio <5){
+            result = "Neoprene";
+        }
+        return result;
+    }
+
+    private String getEncaje2(int sensibilidad) {
+
+        return "HST lace";
+    }
+
+    private String getRodilla2(int movilidad) {
+
+        return "N.A";
+    }
+
+    private String getPie2(int fuerza) {
+
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 3) {
+            result = "SACH foot";
+        }
+        else if(fuerza >=3 && fuerza< 5) {
+            result = "Uniaxial foot";
+        }
+        return result;
+    }
+    //K3
+    private String getSujecion3(int equilibrio) {
+        return "Neoprene";
+    }
+
+    private String getEncaje3(int sensibilidad) {
+
+        return "HST lace";
+    }
+
+    private String getRodilla3(int movilidad) {
+
+        return "N.A";
+    }
+
+    private String getPie3(int fuerza) {
+
+        String result = "N.A";
+
+        if(fuerza >=3 && fuerza< 5) {
+            result = "Uniaxial foot";
+        }
+        else if(fuerza >=5 && fuerza< 7) {
+            result = "Multiaxial";
+        }
+        return result;
+    }
+    // K4
+    private String getSujecion4(int equilibrio) {
+        return "Neoprene";
+    }
+
+    private String getEncaje4(int sensibilidad) {
+
+        return "HST lace";
+    }
+
+    private String getRodilla4(int movilidad) {
+
+        return "N.A";
+    }
+
+    private String getPie4(int fuerza) {
+
+        String result = "N.A";
+
+        if(fuerza >=5 && fuerza< 7) {
+            result = "Multiaxial";
+        }
+        else if(fuerza >=7 && fuerza< 10) {
+            result = "Absorption";
+        }
+        return result;
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -138,10 +320,10 @@ public class ResultActivity extends AppCompatActivity {
         weight = getIntent().getStringExtra("WEIGHT");
         getIntent().getStringExtra("ADDRESS");
         getIntent().getStringExtra("HEALTH");
-        getIntent().getStringExtra("C1");
-        getIntent().getStringExtra("C2");
-        getIntent().getStringExtra("C3");
-        getIntent().getStringExtra("C4");
+        fuerza = Integer.parseInt( getIntent().getStringExtra("C1") );
+        movilidad = Integer.parseInt( getIntent().getStringExtra("C2") );
+        sensibilidad = Integer.parseInt( getIntent().getStringExtra("C3") );
+        equilibrio = Integer.parseInt( getIntent().getStringExtra("C4") );
 
     }
 
@@ -166,6 +348,11 @@ public class ResultActivity extends AppCompatActivity {
         }
 
         return value;
+
+    }
+    private void parametrosR(String value){
+
+
 
     }
 

@@ -83,10 +83,10 @@ public class PersonalActivity extends AppCompatActivity implements AdapterView.O
                 dataIntent.putExtra("WEIGHT", etPatienteWeight.getText().toString() );
                 dataIntent.putExtra("ADDRESS", etPatienteAddress.getText().toString() );
                 dataIntent.putExtra("HEALTH", etPatienteHealth.getText().toString() );
-                dataIntent.putExtra("C1", pie );
-                dataIntent.putExtra("C2", rodilla );
-                dataIntent.putExtra("C3", encaje );
-                dataIntent.putExtra("C4", tipoSujecion );
+                dataIntent.putExtra("C1", FuerzaArt.getText().toString() );
+                dataIntent.putExtra("C2", MovilidadArt.getText().toString() );
+                dataIntent.putExtra("C3", Sensibilidad.getText().toString() );
+                dataIntent.putExtra("C4", Equilibrio.getText().toString() );
 
 
                 startActivity(dataIntent);
