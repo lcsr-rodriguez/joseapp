@@ -16,12 +16,12 @@ import java.time.LocalDateTime;
 public class ResultActivity extends AppCompatActivity {
 
     // doctor info
-    private String doctorname, doctorid, doctoremail, doctorOccupation, weight;
+    private String doctorname, doctorid, doctoremail, doctorOccupation, weight, type, name, id, age;
     private TextView etDoctorName, etDoctorID, etDoctorEmail, etDoctorOcu;
     // personal info
-
+    private TextView tvName, tvID, tvAge, tvWeight;
     // Table items
-    private TextView kTotal,kRecommendations, kIndex, tvMaterial, tvcurrentTime;
+    private TextView kTotal,kRecommendations, kIndex, tvMaterial, tvcurrentTime, tvType;
     private int kvalue;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -91,6 +91,12 @@ public class ResultActivity extends AppCompatActivity {
         etDoctorOcu.setText(doctorOccupation.toString());
         tvcurrentTime.setText( String.valueOf(localDate) );
         tvMaterial.setText( setMaterial( Integer.parseInt(weight) ) );
+        tvType.setText( String.valueOf(type) );
+        // patiente
+        tvName.setText(name);
+        tvAge.setText(age);
+        tvID.setText(id);
+        tvWeight.setText(weight);
 
     }
 
@@ -106,6 +112,12 @@ public class ResultActivity extends AppCompatActivity {
         kRecommendations = (TextView) findViewById(R.id.kResult);
         tvMaterial = (TextView) findViewById(R.id.tvMaterial);
         tvcurrentTime = (TextView) findViewById(R.id.tvCurrentTime);
+        tvType = (TextView) findViewById(R.id.tvType);
+        // patiente
+        tvName = (TextView) findViewById(R.id.tvName);
+        tvID = (TextView) findViewById(R.id.tvID);
+        tvAge = (TextView) findViewById(R.id.tvAge);
+        tvWeight = (TextView) findViewById(R.id.tvWeight);
 
     }
 
@@ -119,11 +131,10 @@ public class ResultActivity extends AppCompatActivity {
         doctorOccupation = getIntent().getStringExtra("DOCTOROCCUPATION");
         getIntent().getStringExtra("CONVEYANCE");
         getIntent().getStringExtra("SOCIOECONOMIC");
-        getIntent().getStringExtra("AMPUTATION");
-        getIntent().getStringExtra("NAME");
-        getIntent().getStringExtra("ID");
-        getIntent().getStringExtra("NAME");
-        getIntent().getStringExtra("AGE");
+        type = getIntent().getStringExtra("AMPUTATION");
+        name = getIntent().getStringExtra("NAME");
+        id = getIntent().getStringExtra("ID");
+        age = getIntent().getStringExtra("AGE");
         weight = getIntent().getStringExtra("WEIGHT");
         getIntent().getStringExtra("ADDRESS");
         getIntent().getStringExtra("HEALTH");
