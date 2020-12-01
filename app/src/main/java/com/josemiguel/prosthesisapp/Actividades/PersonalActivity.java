@@ -17,7 +17,7 @@ import com.josemiguel.prosthesisapp.R;
 public class PersonalActivity extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
     private EditText FuerzaArt, MovilidadArt, Sensibilidad, Equilibrio;
-    private EditText etPatienteName,etPatienteID,etPatienteAge,etPatienteHeight,etPatienteAddress,etPatienteHealth;
+    private EditText etPatienteName,etPatienteID,etPatienteAge,etPatienteWeight,etPatienteAddress,etPatienteHealth;
     private Spinner spConveyance, spSocioeconomic, spAmputation;
     private Button btnResponse;
     private String pie, rodilla, encaje, tipoSujecion, valueSpinnerAmp, valueSpinnerConv, valueSpinnerSoc;
@@ -84,7 +84,7 @@ public class PersonalActivity extends AppCompatActivity implements AdapterView.O
                 dataIntent.putExtra("ID", etPatienteID.getText().toString() );
                 dataIntent.putExtra("NAME", etPatienteName.getText().toString() );
                 dataIntent.putExtra("AGE", etPatienteAge.getText().toString() );
-                dataIntent.putExtra("HEIGHT", etPatienteHeight.getText().toString() );
+                dataIntent.putExtra("WEIGHT", etPatienteWeight.getText().toString() );
                 dataIntent.putExtra("ADDRESS", etPatienteAddress.getText().toString() );
                 dataIntent.putExtra("HEALTH", etPatienteHealth.getText().toString() );
                 dataIntent.putExtra("C1", pie );
@@ -218,7 +218,7 @@ public class PersonalActivity extends AppCompatActivity implements AdapterView.O
         etPatienteName = (EditText) findViewById(R.id.etPatienteName);
         etPatienteID = (EditText) findViewById(R.id.etPatienteID);
         etPatienteAge = (EditText) findViewById(R.id.etPatienteAge);
-        etPatienteHeight = (EditText) findViewById(R.id.etPatienteHeight);
+        etPatienteWeight = (EditText) findViewById(R.id.etPatienteWeight);
         etPatienteAddress = (EditText) findViewById(R.id.etPatienteAddress);
         etPatienteHealth = (EditText) findViewById(R.id.etPatienteHealth);
 

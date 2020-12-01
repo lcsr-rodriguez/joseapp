@@ -146,7 +146,7 @@
                     android:hint="Enter your age"
                     android:textSize="15sp" />
                 <EditText
-                    android:id="@+id/etPatienteHeight"
+                    android:id="@+id/etPatienteWeight"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

@@ -66,7 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="13dp"
-        android:text="TextView"
+        android:text="Weight:"
         android:textColor="#4CAF50"
         app:layout_constraintStart_toStartOf="@+id/textView15"
         app:layout_constraintTop_toBottomOf="@+id/textView15"
@@ -86,7 +86,7 @@
         tools:ignore="MissingConstraints" />
 
     <TextView
-        android:id="@+id/tvHeight"
+        android:id="@+id/tvWeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=""
@@ -207,4 +207,78 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="30dp"
+        android:layout_marginHorizontal="10dp"
+        android:background="#f1f1f1"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        tools:ignore="MissingConstraints">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tel"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:gravity="center"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Alice"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:layout_marginBottom="1dp"
+                android:layout_marginHorizontal="1dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="a@a.com"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="111-111"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:background="#ffffff"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
