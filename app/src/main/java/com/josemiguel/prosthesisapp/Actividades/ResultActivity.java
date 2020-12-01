@@ -1,7 +1,9 @@
 package com.josemiguel.prosthesisapp.Actividades;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.os.Build;
 import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -9,17 +11,20 @@ import android.widget.Toast;
 
 import com.josemiguel.prosthesisapp.R;
 
+import java.time.LocalDateTime;
+
 public class ResultActivity extends AppCompatActivity {
 
     // doctor info
-    private String doctorname, doctorid, doctoremail, doctorOccupation;
+    private String doctorname, doctorid, doctoremail, doctorOccupation, weight;
     private TextView etDoctorName, etDoctorID, etDoctorEmail, etDoctorOcu;
     // personal info
 
     // Table items
-    private TextView kTotal,kRecommendations, kIndex;
+    private TextView kTotal,kRecommendations, kIndex, tvMaterial, tvcurrentTime;
     private int kvalue;
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -75,13 +80,17 @@ public class ResultActivity extends AppCompatActivity {
 
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     private void changeInfoLayout() {
+
+        LocalDateTime localDate = LocalDateTime.now();
 
         etDoctorName.setText(doctorname.toString());
         etDoctorID.setText(doctorid.toString());
         etDoctorEmail.setText(doctoremail.toString());
         etDoctorOcu.setText(doctorOccupation.toString());
-
+        tvcurrentTime.setText( String.valueOf(localDate) );
+        tvMaterial.setText( setMaterial( Integer.parseInt(weight) ) );
 
     }
 
@@ -95,7 +104,8 @@ public class ResultActivity extends AppCompatActivity {
         kIndex = (TextView) findViewById(R.id.kIndex);
         kTotal = (TextView) findViewById(R.id.kTotal);
         kRecommendations = (TextView) findViewById(R.id.kResult);
-
+        tvMaterial = (TextView) findViewById(R.id.tvMaterial);
+        tvcurrentTime = (TextView) findViewById(R.id.tvCurrentTime);
 
     }
 
@@ -114,13 +124,37 @@ public class ResultActivity extends AppCompatActivity {
         getIntent().getStringExtra("ID");
         getIntent().getStringExtra("NAME");
         getIntent().getStringExtra("AGE");
-        getIntent().getStringExtra("WEIGHT");
+        weight = getIntent().getStringExtra("WEIGHT");
         getIntent().getStringExtra("ADDRESS");
         getIntent().getStringExtra("HEALTH");
         getIntent().getStringExtra("C1");
         getIntent().getStringExtra("C2");
         getIntent().getStringExtra("C3");
         getIntent().getStringExtra("C4");
+
+    }
+
+    private String setMaterial(int weight) {
+
+        String value;
+
+        if(weight >= 40 && weight <= 60) {
+            value="Titanium";
+        }
+        else if(weight >= 61 && weight <= 85) {
+            value="Titanium /Steel";
+        }
+        else if(weight >= 61 && weight <= 85) {
+            value="Duralumnium";
+        }
+        else if(weight >= 86 && weight <= 115) {
+            value="Duralumnium";
+        }
+        else {
+            value = "Weight greater than 115 kg";
+        }
+
+        return value;
 
     }
 

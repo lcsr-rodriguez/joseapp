@@ -59,6 +59,7 @@ public class PersonalActivity extends AppCompatActivity implements AdapterView.O
                             total = getFuerzaArt() + getMovilidad() + getSensibilidad() + getSujecion();
                         break;
                     default:
+                            total = getFuerzaArt() + getMovilidad() + getSensibilidad() + getSujecion();
                         Toast.makeText(PersonalActivity.this, "¡Invalid Option!", Toast.LENGTH_SHORT).show();
                 }
 
