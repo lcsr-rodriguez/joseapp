@@ -255,7 +255,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Total"
+                android:text="Foot"
                 android:textStyle="bold" />
 
             <TextView
@@ -263,7 +263,23 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:gravity="center"
-                android:text="Recommendations"
+                android:text="Knee"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Socket"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Subjection"
                 android:textStyle="bold" />
 
 
@@ -283,7 +299,7 @@
                 android:text="1" />
 
             <TextView
-                android:id="@+id/kTotal"
+                android:id="@+id/kFoot"
                 android:layout_width="@dimen/text_margin"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="1dp"
@@ -295,7 +311,7 @@
                 android:text="N.A" />
 
             <TextView
-                android:id="@+id/kResult"
+                android:id="@+id/kKnee"
                 android:layout_width="@dimen/text_margin"
                 android:layout_height="wrap_content"
                 android:layout_marginRight="1dp"
@@ -305,6 +321,30 @@
                 android:gravity="left"
                 android:paddingLeft="10dp"
                 android:text="N.A" />
+
+            <TextView
+                android:id="@+id/kLace"
+                android:layout_width="@dimen/text_margin"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:gravity="left"
+                android:paddingLeft="10dp"
+                android:text="N.A" />
+
+            f<TextView
+            android:id="@+id/kSubjection"
+            android:layout_width="@dimen/text_margin"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:background="#ffffff"
+            android:gravity="left"
+            android:paddingLeft="10dp"
+            android:text="N.A" />
 
 
         </TableRow>

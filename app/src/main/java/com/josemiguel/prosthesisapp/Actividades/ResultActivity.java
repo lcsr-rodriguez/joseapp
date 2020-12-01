@@ -21,10 +21,11 @@ public class ResultActivity extends AppCompatActivity {
     // personal info
     private TextView tvName, tvID, tvAge, tvWeight;
     // Table items
-    private TextView kTotal,kRecommendations, kIndex, tvMaterial, tvcurrentTime, tvType;
+    private TextView kFoot,kKnee, kIndex, kLace, kSubjection , tvMaterial, tvcurrentTime, tvType;
     private int kvalue;
     // inputs
     private int fuerza,movilidad,sensibilidad,equilibrio;
+    private String valuePie, valueRodilla, valueEncaje, valueSujecion;
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
@@ -37,7 +38,7 @@ public class ResultActivity extends AppCompatActivity {
         setViewLayout();
 
         // values
-        getKValue(kvalue);
+        getKValue(kvalue, type);
 
         // Cambia los valores y muestra la info
         changeInfoLayout();
@@ -45,104 +46,147 @@ public class ResultActivity extends AppCompatActivity {
     }
 
     // Determina el valor de K
-    public void getKValue(int value) {
-
-        String valuePie, valueRodilla, valueEncaje, valueSujecion;
-
+    public void getKValue(int value, String tipo) {
+        //Toast.makeText(this, "val tipo"+tipo, Toast.LENGTH_SHORT).show();
         if(value < 4) {
             //Toast.makeText(this, "K0", Toast.LENGTH_SHORT).show();
 
         }
         else if(value >= 4 && value <= 12) {
             //Toast.makeText(this, "K1", Toast.LENGTH_SHORT).show();
-            if(type=="Transtibial")  {
-                valuePie = getPie1(fuerza);
-                valueRodilla = getRodilla1(movilidad);
-                valueEncaje = getEncaje1(sensibilidad);
-                valueSujecion = getSujecion1(equilibrio);
-            }
-            if(type=="Disarticulated knee")  {
+            switch (tipo) {
+                case "Transtibial":
+                    Toast.makeText(this, "opc1", Toast.LENGTH_SHORT).show();
+                    valuePie = getPie1(fuerza);
+                    valueRodilla = getRodilla1(movilidad);
+                    valueEncaje = getEncaje1(sensibilidad);
+                    valueSujecion = getSujecion1(equilibrio);
+                    kIndex.setText("4");
+                    kFoot.setText(valuePie);
+                    kKnee.setText(valueRodilla);
+                    kLace.setText(valueEncaje);
+                    kSubjection.setText(valueSujecion);
+                    break;
+                case "Disarticulated knee":
 
-            }
-            if(type=="Transfemoral")  {
+                    break;
+                case "Transfemoral":
 
-            }
-            if(type=="Disarticulated hip")  {
+                    break;
+                case "Disarticulated hip":
 
-            }
-            if(type=="Hemilpevectomy")  {
+                    break;
+                case "Hemilpevectomy":
 
+                    break;
+                default:
+                    Toast.makeText(this, "Ninguno", Toast.LENGTH_SHORT).show(); break;
             }
         }
         else if(value >= 13 && value <= 22) {
             //Toast.makeText(this, "K2", Toast.LENGTH_SHORT).show();
-            if(type=="Transtibial")  {
-                valuePie = getPie2(fuerza);
-                valueRodilla = getRodilla2(movilidad);
-                valueEncaje = getEncaje2(sensibilidad);
-                valueSujecion = getSujecion2(equilibrio);
-            }
-            if(type=="Disarticulated knee")  {
+            switch (tipo) {
+                case "Transtibial":
+                    Toast.makeText(this, "opc2", Toast.LENGTH_SHORT).show();
+                    valuePie = getPie2(fuerza);
+                    valueRodilla = getRodilla2(movilidad);
+                    valueEncaje = getEncaje2(sensibilidad);
+                    valueSujecion = getSujecion2(equilibrio);
+                    kIndex.setText("2");
+                    kFoot.setText(valuePie);
+                    kKnee.setText(valueRodilla);
+                    kLace.setText(valueEncaje);
+                    kSubjection.setText(valueSujecion);
+                    break;
+                case "Disarticulated knee":
 
-            }
-            if(type=="Transfemoral")  {
+                    break;
+                case "Transfemoral":
 
-            }
-            if(type=="Disarticulated hip")  {
+                    break;
+                case "Disarticulated hip":
 
-            }
-            if(type=="Hemilpevectomy")  {
+                    break;
+                case "Hemilpevectomy":
 
+                    break;
+                default:
+                    Toast.makeText(this, "Ninguno", Toast.LENGTH_SHORT).show(); break;
             }
 
         }
         else if(value >= 23 && value <= 28) {
             //Toast.makeText(this, "K3", Toast.LENGTH_SHORT).show();
-            if(type=="Transtibial")  {
-                valuePie = getPie3(fuerza);
-                valueRodilla = getRodilla3(movilidad);
-                valueEncaje = getEncaje3(sensibilidad);
-                valueSujecion = getSujecion3(equilibrio);
-            }
-            if(type=="Disarticulated knee")  {
+            switch (tipo) {
+                case "Transtibial":
+                    Toast.makeText(this, "opc3", Toast.LENGTH_SHORT).show();
+                    valuePie = getPie3(fuerza);
+                    valueRodilla = getRodilla3(movilidad);
+                    valueEncaje = getEncaje3(sensibilidad);
+                    valueSujecion = getSujecion3(equilibrio);
+                    kIndex.setText("3");
+                    kFoot.setText(valuePie);
+                    kKnee.setText(valueRodilla);
+                    kLace.setText(valueEncaje);
+                    kSubjection.setText(valueSujecion);
+                    break;
+                case "Disarticulated knee":
 
-            }
-            if(type=="Transfemoral")  {
+                    break;
+                case "Transfemoral":
 
-            }
-            if(type=="Disarticulated hip")  {
+                    break;
+                case "Disarticulated hip":
 
-            }
-            if(type=="Hemilpevectomy")  {
+                    break;
+                case "Hemilpevectomy":
 
+                    break;
+                default:
+                    Toast.makeText(this, "Ninguno", Toast.LENGTH_SHORT).show(); break;
             }
 
         }
         else if(value >= 29 && value <= 40) {
             //Toast.makeText(this, "K4", Toast.LENGTH_SHORT).show();
-            if(type=="Transtibial")  {
-                valuePie = getPie4(fuerza);
-                valueRodilla = getRodilla4(movilidad);
-                valueEncaje = getEncaje4(sensibilidad);
-                valueSujecion = getSujecion4(equilibrio);
-            }
-            if(type=="Disarticulated knee")  {
+            switch (tipo) {
+                case "Transtibial":
+                    Toast.makeText(this, "opc4", Toast.LENGTH_SHORT).show();
+                    valuePie = getPie4(fuerza);
+                    valueRodilla = getRodilla4(movilidad);
+                    valueEncaje = getEncaje4(sensibilidad);
+                    valueSujecion = getSujecion4(equilibrio);
+                    kIndex.setText("4");
+                    kFoot.setText(valuePie);
+                    kKnee.setText(valueRodilla);
+                    kLace.setText(valueEncaje);
+                    kSubjection.setText(valueSujecion);
+                break;
+                case "Disarticulated knee":
 
-            }
-            if(type=="Transfemoral")  {
+                break;
+                case "Transfemoral":
 
-            }
-            if(type=="Disarticulated hip")  {
+                break;
+                case "Disarticulated hip":
 
-            }
-            if(type=="Hemilpevectomy")  {
+                break;
+                case "Hemilpevectomy":
 
+                break;
+                default:
+                    Toast.makeText(this, "Ninguno", Toast.LENGTH_SHORT).show(); break;
             }
 
         }
         else{
             //Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
         }
+        // Cambia el valor de los campos en la tabla
+        //kFoot.setText( valuePie );
+        //kKnee.setText( valueRodilla );
+        //kLace.setText( valueEncaje );
+        //kSubjection.setText( valueSujecion );
 
     }
 
@@ -167,11 +211,11 @@ public class ResultActivity extends AppCompatActivity {
 
     private String getPie1(int fuerza) {
 
-        String result = "N.A";
-
+        String result;
         if(fuerza >=1 && fuerza< 3) {
             result = "SACH foot";
         }
+        else result = "N.A";
         return result;
     }
 
@@ -251,15 +295,16 @@ public class ResultActivity extends AppCompatActivity {
 
     private String getPie4(int fuerza) {
 
-        String result = "N.A";
-
         if(fuerza >=5 && fuerza< 7) {
-            result = "Multiaxial";
+            return "Multiaxial";
         }
         else if(fuerza >=7 && fuerza< 10) {
-            result = "Absorption";
+            return  "Absorption";
         }
-        return result;
+        else {
+            return "N.A";
+        }
+
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
@@ -290,8 +335,10 @@ public class ResultActivity extends AppCompatActivity {
         etDoctorOcu = (TextView) findViewById(R.id.tvDOccupation);
         // table items
         kIndex = (TextView) findViewById(R.id.kIndex);
-        kTotal = (TextView) findViewById(R.id.kTotal);
-        kRecommendations = (TextView) findViewById(R.id.kResult);
+        kFoot = (TextView) findViewById(R.id.kFoot);
+        kKnee = (TextView) findViewById(R.id.kKnee);
+        kLace = (TextView) findViewById(R.id.kLace);
+        kSubjection = (TextView) findViewById(R.id.kSubjection);
         tvMaterial = (TextView) findViewById(R.id.tvMaterial);
         tvcurrentTime = (TextView) findViewById(R.id.tvCurrentTime);
         tvType = (TextView) findViewById(R.id.tvType);
@@ -324,7 +371,7 @@ public class ResultActivity extends AppCompatActivity {
         movilidad = Integer.parseInt( getIntent().getStringExtra("C2") );
         sensibilidad = Integer.parseInt( getIntent().getStringExtra("C3") );
         equilibrio = Integer.parseInt( getIntent().getStringExtra("C4") );
-
+        //Toast.makeText(this, "tipo"+type, Toast.LENGTH_SHORT).show();
     }
 
     private String setMaterial(int weight) {
