@@ -44,24 +44,19 @@ public class PersonalActivity extends AppCompatActivity implements AdapterView.O
                 // Amputation type => K value
                 switch(valueSpinnerAmp) {
                     case "Transtibial":
-                            int valueFuerza = getFuerzaArt();
-                            int valueMovilidad = getMovilidad();
-                            int valueSensibilidad = getSensibilidad();
-                            int valueSujecion = getSujecion();
-
-                            total = valueFuerza + valueMovilidad + valueSensibilidad + valueSujecion;
+                            total = getFuerzaArt() + getMovilidad() + getSensibilidad() + getSujecion();
                         break;
                     case "Disarticulated knee":
-                        // code block
+                            total = getFuerzaArt() + getMovilidad() + getSensibilidad() + getSujecion();
                         break;
                     case "Transfemoral":
-                        // code block
+                            total = getFuerzaArt() + getMovilidad() + getSensibilidad() + getSujecion();
                         break;
                     case "Disarticulated hip":
-                        // code block
+                            total = getFuerzaArt() + getMovilidad() + getSensibilidad() + getSujecion();
                         break;
                     case "Hemilpevectomy":
-                        // code block
+                            total = getFuerzaArt() + getMovilidad() + getSensibilidad() + getSujecion();
                         break;
                     default:
                         Toast.makeText(PersonalActivity.this, "¡Invalid Option!", Toast.LENGTH_SHORT).show();
@@ -112,22 +107,22 @@ public class PersonalActivity extends AppCompatActivity implements AdapterView.O
     public void getKValue(int value) {
 
         if(value < 4) {
-            Toast.makeText(this, "K0", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "K0", Toast.LENGTH_SHORT).show();
         }
         else if(value >= 4 && value <= 12) {
-            Toast.makeText(this, "K1", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "K1", Toast.LENGTH_SHORT).show();
         }
         else if(value >= 13 && value <= 22) {
-            Toast.makeText(this, "K2", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "K2", Toast.LENGTH_SHORT).show();
         }
         else if(value >= 23 && value <= 28) {
-            Toast.makeText(this, "K3", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "K3", Toast.LENGTH_SHORT).show();
         }
         else if(value >= 29 && value <= 40) {
-            Toast.makeText(this, "K4", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "K4", Toast.LENGTH_SHORT).show();
         }
         else{
-            Toast.makeText(this, "Usted está jodido", Toast.LENGTH_SHORT).show();
+            //Toast.makeText(this, "Usted está jodido", Toast.LENGTH_SHORT).show();
         }
 
     }
