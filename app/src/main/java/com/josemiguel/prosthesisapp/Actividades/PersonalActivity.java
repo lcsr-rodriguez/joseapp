@@ -55,7 +55,7 @@ public class PersonalActivity extends AppCompatActivity implements AdapterView.O
                     case "Disarticulated hip":
                             total = getFuerzaArt() + getMovilidad() + getSensibilidad() + getSujecion();
                         break;
-                    case "Hemilpevectomy":
+                    case "Hemipelvectomy":
                             total = getFuerzaArt() + getMovilidad() + getSensibilidad() + getSujecion();
                         break;
                     default:

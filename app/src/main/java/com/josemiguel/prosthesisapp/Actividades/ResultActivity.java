@@ -292,7 +292,7 @@ public class ResultActivity extends AppCompatActivity {
                     kLace.setText(valueEncaje);
                     kSubjection.setText(valueSujecion);
                 break;
-                case "Hemilpevectomy":
+                case "Hemipelvectomy":
                     valuePie = getPie44444(fuerza);
                     valueRodilla = getRodilla44444(movilidad);
                     valueEncaje = getEncaje44444(sensibilidad);
@@ -354,7 +354,7 @@ public class ResultActivity extends AppCompatActivity {
     private String getRodilla11(int movilidad) {
 
         String result;
-        if(fuerza >=1 && fuerza< 3) {
+        if(movilidad >=1 && movilidad< 3) {
             result = "Polycentric";
         }
         else result = "N.A";
@@ -374,7 +374,7 @@ public class ResultActivity extends AppCompatActivity {
     private String getSujecion111(int equilibrio) {
 
         String result;
-        if(fuerza >=1 && fuerza< 3) {
+        if(equilibrio >=1 && equilibrio< 3) {
             result = "Bi-directional valve and pin";
         }
         else result = "N.A";
@@ -383,7 +383,7 @@ public class ResultActivity extends AppCompatActivity {
 
     private String getEncaje111(int sensibilidad) {
         String result;
-        if(fuerza >=1 && fuerza< 3) {
+        if(sensibilidad >=1 && sensibilidad< 3) {
             result = "Quadrangular lace. Soft interface (Liner)";
         }
         else result = "N.A";
@@ -393,7 +393,7 @@ public class ResultActivity extends AppCompatActivity {
     private String getRodilla111(int movilidad) {
 
         String result;
-        if(fuerza >=1 && fuerza< 3) {
+        if(movilidad >=1 && movilidad< 3) {
             result = "Polycentric with load brake";
         }
         else result = "N.A";
@@ -413,7 +413,7 @@ public class ResultActivity extends AppCompatActivity {
     private String getSujecion1111(int equilibrio) {
         String result = "N.A";
 
-        if(fuerza >=1 && fuerza< 3) {
+        if(equilibrio >=1 && equilibrio< 3) {
             result = "Belt systems";
         }
         return result;
@@ -423,7 +423,7 @@ public class ResultActivity extends AppCompatActivity {
 
         String result = "N.A";
 
-        if(fuerza >=1 && fuerza< 3) {
+        if(sensibilidad >=1 && sensibilidad< 3) {
             result = "UCLA anatomical prosthesis";
         }
         return result;
@@ -433,7 +433,7 @@ public class ResultActivity extends AppCompatActivity {
 
         String result = "N.A";
 
-        if(fuerza >=1 && fuerza< 3) {
+        if(movilidad >=1 && movilidad< 3) {
             result = "Manual release knee";
         }
         return result;
@@ -452,7 +452,7 @@ public class ResultActivity extends AppCompatActivity {
     private String getSujecion11111(int equilibrio) {
         String result = "N.A";
 
-        if(fuerza >=1 && fuerza< 3) {
+        if(equilibrio >=1 && equilibrio< 3) {
             result = "Belt systems";
         }
         return result;
@@ -467,7 +467,7 @@ public class ResultActivity extends AppCompatActivity {
 
         String result = "N.A";
 
-        if(fuerza >=1 && fuerza< 3) {
+        if(movilidad >=1 && movilidad< 3) {
             result = "Single-center free with brake";
         }
         return result;
@@ -529,7 +529,7 @@ public class ResultActivity extends AppCompatActivity {
 
         String result = "N.A";
 
-        if(fuerza >=1 && fuerza< 5) {
+        if(movilidad >=1 && movilidad< 5) {
             result = "Polycentric";
         }
         return result;
@@ -554,7 +554,7 @@ public class ResultActivity extends AppCompatActivity {
     private String getSujecion222(int equilibrio) {
         String result = "N.A";
 
-        if(fuerza >=1 && fuerza< 5) {
+        if(equilibrio >=1 && equilibrio< 5) {
             result = "Bi-directional valve and pin";
         }
         return result;
@@ -564,10 +564,10 @@ public class ResultActivity extends AppCompatActivity {
 
         String result = "N.A";
 
-        if(fuerza >=1 && fuerza< 3) {
+        if(sensibilidad >=1 && sensibilidad< 3) {
             result = "Quadrangular lace. Soft interface (Liner)";
         }
-        else if(fuerza >=3 && fuerza< 5) {
+        else if(sensibilidad >=3 && sensibilidad< 5) {
             result = "CAT-CAM ischial restraint socket. Soft interface (Liner)";
         }
         return result;
@@ -576,8 +576,7 @@ public class ResultActivity extends AppCompatActivity {
     private String getRodilla222(int movilidad) {
 
         String result = "N.A";
-
-        if(fuerza >=1 && fuerza< 5) {
+        if(movilidad >=1 && movilidad< 5) {
             result = "Polycentric with load brake";
         }
         return result;
@@ -599,7 +598,7 @@ public class ResultActivity extends AppCompatActivity {
     private String getSujecion2222(int equilibrio) {
         String result = "N.A";
 
-        if(fuerza >=1 && fuerza< 5) {
+        if(equilibrio >=1 && equilibrio< 5) {
             result = "Belt systems";
         }
         return result;
@@ -609,7 +608,7 @@ public class ResultActivity extends AppCompatActivity {
 
         String result = "N.A";
 
-        if(fuerza >=1 && fuerza< 5) {
+        if(sensibilidad >=1 && sensibilidad< 5) {
             result = "UCLA anatomical prosthesis";
         }
         return result;
@@ -619,10 +618,10 @@ public class ResultActivity extends AppCompatActivity {
 
         String result = "N.A";
 
-        if(fuerza >=1 && fuerza< 3) {
+        if(movilidad >=1 && movilidad< 3) {
             result = "Manual release knee";
         }
-        else if(fuerza >=3 && fuerza< 5) {
+        else if(movilidad >=3 && movilidad< 5) {
             result = "Polycentric with load brake";
         }
         return result;
@@ -641,7 +640,7 @@ public class ResultActivity extends AppCompatActivity {
     private String getSujecion22222(int equilibrio) {
         String result = "N.A";
 
-        if(fuerza >=1 && fuerza< 5) {
+        if(equilibrio >=1 && equilibrio< 5) {
             result = "Belt systems";
         }
         return result;
@@ -656,7 +655,7 @@ public class ResultActivity extends AppCompatActivity {
 
         String result = "N.A";
 
-        if(fuerza >=1 && fuerza< 5) {
+        if(movilidad >=1 && movilidad< 5) {
             result = "Single-center free with brake";
         }
         return result;
@@ -710,7 +709,7 @@ public class ResultActivity extends AppCompatActivity {
 
     private String getRodilla33(int movilidad) {
         String result = "N.A";
-        if (fuerza >= 3 && fuerza < 7) {
+        if (movilidad >= 3 && movilidad < 7) {
             result = "Polycentric";
         }
         return result;
@@ -729,7 +728,7 @@ public class ResultActivity extends AppCompatActivity {
     private String getSujecion333(int equilibrio) {
         String result = "N.A";
 
-        if(fuerza >=1 && fuerza< 5) {
+        if(equilibrio >=1 && equilibrio< 5) {
             result = "Bi-directional valve and pin";
         }
         return result;
@@ -739,10 +738,10 @@ public class ResultActivity extends AppCompatActivity {
 
         String result = "N.A";
 
-        if(fuerza >=3 && fuerza< 5) {
+        if(sensibilidad >=3 && sensibilidad < 5) {
             result = "CAT-CAM ischial restraint socket. Soft interface (Liner)";
         }
-        else if(fuerza >=5 && fuerza< 7) {
+        else if(sensibilidad >=5 && sensibilidad< 7) {
             result = "Soft ISNY.Intersafe Flexible Lace (Liner)";
         }
         return result;
@@ -752,10 +751,10 @@ public class ResultActivity extends AppCompatActivity {
 
         String result = "N.A";
 
-        if(fuerza >=3 && fuerza< 5) {
+        if(movilidad >=3 && movilidad< 5) {
             result = "Polycentric with load brake";
         }
-        else if(fuerza >=5 && fuerza< 7) {
+        else if(movilidad >=5 && movilidad< 7) {
             result = "4-axis pneumatic polycentric knee";
         }
         return result;
@@ -777,7 +776,7 @@ public class ResultActivity extends AppCompatActivity {
     private String getSujecion3333(int equilibrio) {
         String result = "N.A";
 
-        if(fuerza >=3 && fuerza< 7) {
+        if(equilibrio >=3 && equilibrio< 7) {
             result = "Belt systems";
         }
         return result;
@@ -787,7 +786,7 @@ public class ResultActivity extends AppCompatActivity {
 
         String result = "N.A";
 
-        if(fuerza >=3 && fuerza< 7) {
+        if(sensibilidad >=3 && sensibilidad< 7) {
             result = "UCLA anatomical prosthesis";
         }
         return result;
@@ -797,10 +796,10 @@ public class ResultActivity extends AppCompatActivity {
 
         String result = "N.A";
 
-        if(fuerza >=3 && fuerza< 5) {
+        if(movilidad >=3 && movilidad< 5) {
             result = "Polycentric with load brake";
         }
-        else if(fuerza >=5 && fuerza< 7) {
+        else if(movilidad >=5 && movilidad < 7) {
             result = "4-axis pneumatic polycentric knee";
         }
         return result;
@@ -819,7 +818,7 @@ public class ResultActivity extends AppCompatActivity {
     private String getSujecion33333(int equilibrio) {
         String result = "N.A";
 
-        if(fuerza >=3 && fuerza< 7) {
+        if(equilibrio >=3 && equilibrio < 7) {
             result = "Belt systems";
         }
         return result;
@@ -834,10 +833,10 @@ public class ResultActivity extends AppCompatActivity {
 
         String result = "N.A";
 
-        if(fuerza >=3 && fuerza< 5) {
+        if(movilidad >=3 && movilidad < 5) {
             result = "Single-center free with brake";
         }
-        else if(fuerza >=5 && fuerza< 7) {
+        else if(movilidad >=5 && movilidad < 7) {
             result = "Monocentric with load brake";
         }
         return result;
@@ -893,7 +892,7 @@ public class ResultActivity extends AppCompatActivity {
     private String getRodilla44(int movilidad) {
 
         String result = "N.A";
-        if (fuerza >= 5 && fuerza < 10) {
+        if (movilidad >= 5 && movilidad < 10) {
             result = "Polycentric";
         }
         return result;
@@ -914,7 +913,7 @@ public class ResultActivity extends AppCompatActivity {
     private String getSujecion444(int equilibrio) {
         String result = "N.A";
 
-        if(fuerza >=5 && fuerza< 10) {
+        if(equilibrio >=5 && equilibrio< 10) {
             result = "Bi-directional valve and pin";
         }
         return result;
@@ -924,7 +923,7 @@ public class ResultActivity extends AppCompatActivity {
 
         String result = "N.A";
 
-        if(fuerza >=5 && fuerza< 10) {
+        if(sensibilidad >=5 && sensibilidad< 10) {
             result = "Soft ISNY.Intersae Flexible Lace (Liner)";
         }
         return result;
@@ -934,7 +933,7 @@ public class ResultActivity extends AppCompatActivity {
 
         String result = "N.A";
 
-        if(fuerza >=5 && fuerza< 10) {
+        if(movilidad >=5 && movilidad < 10) {
             result = "4-axis pneumatic polycentric knee";
         }
         return result;
@@ -956,7 +955,7 @@ public class ResultActivity extends AppCompatActivity {
     private String getSujecion4444(int equilibrio) {
         String result = "N.A";
 
-        if(fuerza >=5 && fuerza< 10) {
+        if(equilibrio >=5 && equilibrio< 10) {
             result = "Belt systems";
         }
         return result;
@@ -966,7 +965,7 @@ public class ResultActivity extends AppCompatActivity {
 
         String result = "N.A";
 
-        if(fuerza >=5 && fuerza< 10) {
+        if(sensibilidad >=5 && sensibilidad < 10) {
             result = "UCLA anatomical prosthesis";
         }
         return result;
@@ -976,7 +975,7 @@ public class ResultActivity extends AppCompatActivity {
 
         String result = "N.A";
 
-        if(fuerza >=5 && fuerza< 10) {
+        if(movilidad >=5 && movilidad< 10) {
             result = "4-axis pneumatic polycentric knee";
         }
         return result;
@@ -995,7 +994,7 @@ public class ResultActivity extends AppCompatActivity {
     private String getSujecion44444(int equilibrio) {
         String result = "N.A";
 
-        if(fuerza >=5 && fuerza< 10) {
+        if(equilibrio >=5 && equilibrio< 10) {
             result = "Belt systems";
         }
         return result;
@@ -1010,7 +1009,7 @@ public class ResultActivity extends AppCompatActivity {
 
         String result = "N.A";
 
-        if(fuerza >=5 && fuerza< 10) {
+        if(movilidad >=5 && movilidad< 10) {
             result = "Monocentric with load brake";
         }
         return result;
@@ -1020,7 +1019,7 @@ public class ResultActivity extends AppCompatActivity {
 
         String result = "N.A";
 
-        if(fuerza >=5 && fuerza< 7) {
+        if(fuerza >=5 && fuerza< 10) {
             result = "SACH foot";
         }
         return result;
