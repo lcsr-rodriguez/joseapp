@@ -79,6 +79,15 @@ public class ResultActivity extends AppCompatActivity {
                     kSubjection.setText(valueSujecion);
                     break;
                 case "Transfemoral":
+                    valuePie = getPie111(fuerza);
+                    valueRodilla = getRodilla111(movilidad);
+                    valueEncaje = getEncaje111(sensibilidad);
+                    valueSujecion = getSujecion111(equilibrio);
+                    kIndex.setText("1");
+                    kFoot.setText(valuePie);
+                    kKnee.setText(valueRodilla);
+                    kLace.setText(valueEncaje);
+                    kSubjection.setText(valueSujecion);
 
                     break;
                 case "Disarticulated hip":
@@ -118,7 +127,15 @@ public class ResultActivity extends AppCompatActivity {
                     kSubjection.setText(valueSujecion);
                     break;
                 case "Transfemoral":
-
+                    valuePie = getPie222(fuerza);
+                    valueRodilla = getRodilla222(movilidad);
+                    valueEncaje = getEncaje222(sensibilidad);
+                    valueSujecion = getSujecion222(equilibrio);
+                    kIndex.setText("2");
+                    kFoot.setText(valuePie);
+                    kKnee.setText(valueRodilla);
+                    kLace.setText(valueEncaje);
+                    kSubjection.setText(valueSujecion);
                     break;
                 case "Disarticulated hip":
 
@@ -158,7 +175,15 @@ public class ResultActivity extends AppCompatActivity {
                     kSubjection.setText(valueSujecion);
                     break;
                 case "Transfemoral":
-
+                    valuePie = getPie333(fuerza);
+                    valueRodilla = getRodilla333(movilidad);
+                    valueEncaje = getEncaje333(sensibilidad);
+                    valueSujecion = getSujecion333(equilibrio);
+                    kIndex.setText("3");
+                    kFoot.setText(valuePie);
+                    kKnee.setText(valueRodilla);
+                    kLace.setText(valueEncaje);
+                    kSubjection.setText(valueSujecion);
                     break;
                 case "Disarticulated hip":
 
@@ -198,7 +223,15 @@ public class ResultActivity extends AppCompatActivity {
                     kSubjection.setText(valueSujecion);
                 break;
                 case "Transfemoral":
-
+                    valuePie = getPie444(fuerza);
+                    valueRodilla = getRodilla444(movilidad);
+                    valueEncaje = getEncaje444(sensibilidad);
+                    valueSujecion = getSujecion444(equilibrio);
+                    kIndex.setText("4");
+                    kFoot.setText(valuePie);
+                    kKnee.setText(valueRodilla);
+                    kLace.setText(valueEncaje);
+                    kSubjection.setText(valueSujecion);
                 break;
                 case "Disarticulated hip":
 
@@ -265,6 +298,45 @@ public class ResultActivity extends AppCompatActivity {
     }
 
     private String getPie11(int fuerza) {
+
+        String result;
+        if(fuerza >=1 && fuerza< 3) {
+            result = "SACH foot";
+        }
+        else result = "N.A";
+        return result;
+    }
+    // K1 TRANSFEMORAL
+    private String getSujecion111(int equilibrio) {
+
+        String result;
+        if(fuerza >=1 && fuerza< 3) {
+            result = "Bi-directional valve and pin";
+        }
+        else result = "N.A";
+        return result;
+    }
+
+    private String getEncaje111(int sensibilidad) {
+        String result;
+        if(fuerza >=1 && fuerza< 3) {
+            result = "Quadrangular lace. Soft interface (Liner)";
+        }
+        else result = "N.A";
+        return result;
+    }
+
+    private String getRodilla111(int movilidad) {
+
+        String result;
+        if(fuerza >=1 && fuerza< 3) {
+            result = "Polycentric with load brake";
+        }
+        else result = "N.A";
+        return result;
+    }
+
+    private String getPie111(int fuerza) {
 
         String result;
         if(fuerza >=1 && fuerza< 3) {
@@ -341,6 +413,51 @@ public class ResultActivity extends AppCompatActivity {
         }
         return result;
     }
+    // K2 TRANSFEMORAL
+    private String getSujecion222(int equilibrio) {
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 5) {
+            result = "Bi-directional valve and pin";
+        }
+        return result;
+    }
+
+    private String getEncaje222(int sensibilidad) {
+
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 3) {
+            result = "Quadrangular lace. Soft interface (Liner)";
+        }
+        else if(fuerza >=3 && fuerza< 5) {
+            result = "CAT-CAM ischial restraint socket. Soft interface (Liner)";
+        }
+        return result;
+    }
+
+    private String getRodilla222(int movilidad) {
+
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 5) {
+            result = "Polycentric with load brake";
+        }
+        return result;
+    }
+
+    private String getPie222(int fuerza) {
+
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 3) {
+            result = "SACH foot";
+        }
+        else if(fuerza >=3 && fuerza< 5) {
+            result = "Uniaxial foot";
+        }
+        return result;
+    }
     //K3
     private String getSujecion3(int equilibrio) {
         return "Neoprene";
@@ -391,6 +508,54 @@ public class ResultActivity extends AppCompatActivity {
         if (fuerza >= 3 && fuerza < 5) {
             result = "Uniaxial foot";
         } else if (fuerza >= 5 && fuerza < 7) {
+            result = "Multiaxial";
+        }
+        return result;
+    }
+    // K3 TRANSFEMORAL
+    private String getSujecion333(int equilibrio) {
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 5) {
+            result = "Bi-directional valve and pin";
+        }
+        return result;
+    }
+
+    private String getEncaje333(int sensibilidad) {
+
+        String result = "N.A";
+
+        if(fuerza >=3 && fuerza< 5) {
+            result = "CAT-CAM ischial restraint socket. Soft interface (Liner)";
+        }
+        else if(fuerza >=5 && fuerza< 7) {
+            result = "4-axis pneumatic polycentric knee";
+        }
+        return result;
+    }
+
+    private String getRodilla333(int movilidad) {
+
+        String result = "N.A";
+
+        if(fuerza >=3 && fuerza< 5) {
+            result = "Polycentric with load brake";
+        }
+        else if(fuerza >=5 && fuerza< 7) {
+            result = "Soft ISNY.Intersafe Flexible Lace (Liner)";
+        }
+        return result;
+    }
+
+    private String getPie333(int fuerza) {
+
+        String result = "N.A";
+
+        if(fuerza >=3 && fuerza< 5) {
+            result = "Uniaxial foot";
+        }
+        else if(fuerza >=5 && fuerza< 7) {
             result = "Multiaxial";
         }
         return result;
@@ -450,6 +615,48 @@ public class ResultActivity extends AppCompatActivity {
         }
         else if (fuerza >= 7 && fuerza < 10) {
             result = "Absorption";
+        }
+        return result;
+    }
+    // K4 TRANSFEMORAL
+    private String getSujecion444(int equilibrio) {
+        String result = "N.A";
+
+        if(fuerza >=5 && fuerza< 10) {
+            result = "Bi-directional valve and pin";
+        }
+        return result;
+    }
+
+    private String getEncaje444(int sensibilidad) {
+
+        String result = "N.A";
+
+        if(fuerza >=5 && fuerza< 10) {
+            result = "Soft ISNY.Intersae Flexible Lace (Liner)";
+        }
+        return result;
+    }
+
+    private String getRodilla444(int movilidad) {
+
+        String result = "N.A";
+
+        if(fuerza >=5 && fuerza< 10) {
+            result = "4-axis pneumatic polycentric knee";
+        }
+        return result;
+    }
+
+    private String getPie444(int fuerza) {
+
+        String result = "N.A";
+
+        if(fuerza >=5 && fuerza< 7) {
+            result = "Multiaxial";
+        }
+        else if(fuerza >=7 && fuerza< 10) {
+            result = "Energy absorption or storage";
         }
         return result;
     }
