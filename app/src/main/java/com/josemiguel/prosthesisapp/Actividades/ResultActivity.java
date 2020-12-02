@@ -102,7 +102,15 @@ public class ResultActivity extends AppCompatActivity {
                     kSubjection.setText(valueSujecion);
                     break;
                 case "Hemilpevectomy":
-
+                    valuePie = getPie11111(fuerza);
+                    valueRodilla = getRodilla11111(movilidad);
+                    valueEncaje = getEncaje11111(sensibilidad);
+                    valueSujecion = getSujecion11111(equilibrio);
+                    kIndex.setText("1");
+                    kFoot.setText(valuePie);
+                    kKnee.setText(valueRodilla);
+                    kLace.setText(valueEncaje);
+                    kSubjection.setText(valueSujecion);
                     break;
                 default:
                     Toast.makeText(this, "Ninguno", Toast.LENGTH_SHORT).show(); break;
@@ -157,7 +165,15 @@ public class ResultActivity extends AppCompatActivity {
                     kSubjection.setText(valueSujecion);
                     break;
                 case "Hemilpevectomy":
-
+                    valuePie = getPie22222(fuerza);
+                    valueRodilla = getRodilla22222(movilidad);
+                    valueEncaje = getEncaje22222(sensibilidad);
+                    valueSujecion = getSujecion22222(equilibrio);
+                    kIndex.setText("2");
+                    kFoot.setText(valuePie);
+                    kKnee.setText(valueRodilla);
+                    kLace.setText(valueEncaje);
+                    kSubjection.setText(valueSujecion);
                     break;
                 default:
                     Toast.makeText(this, "Ninguno", Toast.LENGTH_SHORT).show(); break;
@@ -213,7 +229,15 @@ public class ResultActivity extends AppCompatActivity {
                     kSubjection.setText(valueSujecion);
                     break;
                 case "Hemilpevectomy":
-
+                    valuePie = getPie33333(fuerza);
+                    valueRodilla = getRodilla33333(movilidad);
+                    valueEncaje = getEncaje33333(sensibilidad);
+                    valueSujecion = getSujecion33333(equilibrio);
+                    kIndex.setText("3");
+                    kFoot.setText(valuePie);
+                    kKnee.setText(valueRodilla);
+                    kLace.setText(valueEncaje);
+                    kSubjection.setText(valueSujecion);
                     break;
                 default:
                     Toast.makeText(this, "Ninguno", Toast.LENGTH_SHORT).show(); break;
@@ -269,7 +293,15 @@ public class ResultActivity extends AppCompatActivity {
                     kSubjection.setText(valueSujecion);
                 break;
                 case "Hemilpevectomy":
-
+                    valuePie = getPie44444(fuerza);
+                    valueRodilla = getRodilla44444(movilidad);
+                    valueEncaje = getEncaje44444(sensibilidad);
+                    valueSujecion = getSujecion44444(equilibrio);
+                    kIndex.setText("4");
+                    kFoot.setText(valuePie);
+                    kKnee.setText(valueRodilla);
+                    kLace.setText(valueEncaje);
+                    kSubjection.setText(valueSujecion);
                 break;
                 default:
                     Toast.makeText(this, "Ninguno", Toast.LENGTH_SHORT).show(); break;
@@ -408,6 +440,40 @@ public class ResultActivity extends AppCompatActivity {
     }
 
     private String getPie1111(int fuerza) {
+
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 3) {
+            result = "SACH foot";
+        }
+        return result;
+    }
+    // K1 HEMIPELVECTOMIA
+    private String getSujecion11111(int equilibrio) {
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 3) {
+            result = "Belt systems";
+        }
+        return result;
+    }
+
+    private String getEncaje11111(int sensibilidad) {
+
+        return "Lace abdominal cavity cover";
+    }
+
+    private String getRodilla11111(int movilidad) {
+
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 3) {
+            result = "Single-center free with brake";
+        }
+        return result;
+    }
+
+    private String getPie11111(int fuerza) {
 
         String result = "N.A";
 
@@ -571,6 +637,40 @@ public class ResultActivity extends AppCompatActivity {
         }
         return result;
     }
+    // K2 HEMIPLEVECTOMIA
+    private String getSujecion22222(int equilibrio) {
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 5) {
+            result = "Belt systems";
+        }
+        return result;
+    }
+
+    private String getEncaje22222(int sensibilidad) {
+
+        return "Lace abdominal cavity cover";
+    }
+
+    private String getRodilla22222(int movilidad) {
+
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 5) {
+            result = "Single-center free with brake";
+        }
+        return result;
+    }
+
+    private String getPie22222(int fuerza) {
+
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 5) {
+            result = "SACH foot";
+        }
+        return result;
+    }
     //K3
     private String getSujecion3(int equilibrio) {
         return "Neoprene";
@@ -715,6 +815,43 @@ public class ResultActivity extends AppCompatActivity {
         }
         return result;
     }
+    // K3 HEMIPLEVECTOMIA
+    private String getSujecion33333(int equilibrio) {
+        String result = "N.A";
+
+        if(fuerza >=3 && fuerza< 7) {
+            result = "Belt systems";
+        }
+        return result;
+    }
+
+    private String getEncaje33333(int sensibilidad) {
+
+        return "Lace abdominal cavity cover";
+    }
+
+    private String getRodilla33333(int movilidad) {
+
+        String result = "N.A";
+
+        if(fuerza >=3 && fuerza< 5) {
+            result = "Single-center free with brake";
+        }
+        else if(fuerza >=5 && fuerza< 7) {
+            result = "Monocentric with load brake";
+        }
+        return result;
+    }
+
+    private String getPie33333(int fuerza) {
+
+        String result = "N.A";
+
+        if(fuerza >=3 && fuerza< 7) {
+            result = "SACH foot";
+        }
+        return result;
+    }
     // K4
     private String getSujecion4(int equilibrio) {
         return "Neoprene";
@@ -850,6 +987,40 @@ public class ResultActivity extends AppCompatActivity {
         String result = "N.A";
 
         if(fuerza >=5 && fuerza< 10) {
+            result = "SACH foot";
+        }
+        return result;
+    }
+    // K4 HEMIPELVECTOMIA
+    private String getSujecion44444(int equilibrio) {
+        String result = "N.A";
+
+        if(fuerza >=5 && fuerza< 10) {
+            result = "Belt systems";
+        }
+        return result;
+    }
+
+    private String getEncaje44444(int sensibilidad) {
+
+        return "Lace abdominal cavity cover";
+    }
+
+    private String getRodilla44444(int movilidad) {
+
+        String result = "N.A";
+
+        if(fuerza >=5 && fuerza< 10) {
+            result = "Monocentric with load brake";
+        }
+        return result;
+    }
+
+    private String getPie44444(int fuerza) {
+
+        String result = "N.A";
+
+        if(fuerza >=5 && fuerza< 7) {
             result = "SACH foot";
         }
         return result;
