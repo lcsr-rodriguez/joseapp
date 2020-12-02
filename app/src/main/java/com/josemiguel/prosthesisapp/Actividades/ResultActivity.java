@@ -56,19 +56,27 @@ public class ResultActivity extends AppCompatActivity {
             //Toast.makeText(this, "K1", Toast.LENGTH_SHORT).show();
             switch (tipo) {
                 case "Transtibial":
-                    Toast.makeText(this, "opc1", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(this, "opc1", Toast.LENGTH_SHORT).show();
                     valuePie = getPie1(fuerza);
                     valueRodilla = getRodilla1(movilidad);
                     valueEncaje = getEncaje1(sensibilidad);
                     valueSujecion = getSujecion1(equilibrio);
-                    kIndex.setText("4");
+                    kIndex.setText("1");
                     kFoot.setText(valuePie);
                     kKnee.setText(valueRodilla);
                     kLace.setText(valueEncaje);
                     kSubjection.setText(valueSujecion);
                     break;
                 case "Disarticulated knee":
-
+                    valuePie = getPie11(fuerza);
+                    valueRodilla = getRodilla11(movilidad);
+                    valueEncaje = getEncaje11(sensibilidad);
+                    valueSujecion = getSujecion11(equilibrio);
+                    kIndex.setText("1");
+                    kFoot.setText(valuePie);
+                    kKnee.setText(valueRodilla);
+                    kLace.setText(valueEncaje);
+                    kSubjection.setText(valueSujecion);
                     break;
                 case "Transfemoral":
 
@@ -87,7 +95,7 @@ public class ResultActivity extends AppCompatActivity {
             //Toast.makeText(this, "K2", Toast.LENGTH_SHORT).show();
             switch (tipo) {
                 case "Transtibial":
-                    Toast.makeText(this, "opc2", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(this, "opc2", Toast.LENGTH_SHORT).show();
                     valuePie = getPie2(fuerza);
                     valueRodilla = getRodilla2(movilidad);
                     valueEncaje = getEncaje2(sensibilidad);
@@ -99,7 +107,15 @@ public class ResultActivity extends AppCompatActivity {
                     kSubjection.setText(valueSujecion);
                     break;
                 case "Disarticulated knee":
-
+                    valuePie = getPie22(fuerza);
+                    valueRodilla = getRodilla22(movilidad);
+                    valueEncaje = getEncaje22(sensibilidad);
+                    valueSujecion = getSujecion22(equilibrio);
+                    kIndex.setText("2");
+                    kFoot.setText(valuePie);
+                    kKnee.setText(valueRodilla);
+                    kLace.setText(valueEncaje);
+                    kSubjection.setText(valueSujecion);
                     break;
                 case "Transfemoral":
 
@@ -119,7 +135,7 @@ public class ResultActivity extends AppCompatActivity {
             //Toast.makeText(this, "K3", Toast.LENGTH_SHORT).show();
             switch (tipo) {
                 case "Transtibial":
-                    Toast.makeText(this, "opc3", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(this, "opc3", Toast.LENGTH_SHORT).show();
                     valuePie = getPie3(fuerza);
                     valueRodilla = getRodilla3(movilidad);
                     valueEncaje = getEncaje3(sensibilidad);
@@ -131,7 +147,15 @@ public class ResultActivity extends AppCompatActivity {
                     kSubjection.setText(valueSujecion);
                     break;
                 case "Disarticulated knee":
-
+                    valuePie = getPie33(fuerza);
+                    valueRodilla = getRodilla33(movilidad);
+                    valueEncaje = getEncaje33(sensibilidad);
+                    valueSujecion = getSujecion33(equilibrio);
+                    kIndex.setText("3");
+                    kFoot.setText(valuePie);
+                    kKnee.setText(valueRodilla);
+                    kLace.setText(valueEncaje);
+                    kSubjection.setText(valueSujecion);
                     break;
                 case "Transfemoral":
 
@@ -151,7 +175,7 @@ public class ResultActivity extends AppCompatActivity {
             //Toast.makeText(this, "K4", Toast.LENGTH_SHORT).show();
             switch (tipo) {
                 case "Transtibial":
-                    Toast.makeText(this, "opc4", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(this, "opc4", Toast.LENGTH_SHORT).show();
                     valuePie = getPie4(fuerza);
                     valueRodilla = getRodilla4(movilidad);
                     valueEncaje = getEncaje4(sensibilidad);
@@ -163,7 +187,15 @@ public class ResultActivity extends AppCompatActivity {
                     kSubjection.setText(valueSujecion);
                 break;
                 case "Disarticulated knee":
-
+                    valuePie = getPie44(fuerza);
+                    valueRodilla = getRodilla44(movilidad);
+                    valueEncaje = getEncaje44(sensibilidad);
+                    valueSujecion = getSujecion44(equilibrio);
+                    kIndex.setText("4");
+                    kFoot.setText(valuePie);
+                    kKnee.setText(valueRodilla);
+                    kLace.setText(valueEncaje);
+                    kSubjection.setText(valueSujecion);
                 break;
                 case "Transfemoral":
 
@@ -182,14 +214,9 @@ public class ResultActivity extends AppCompatActivity {
         else{
             //Toast.makeText(this, "Error", Toast.LENGTH_SHORT).show();
         }
-        // Cambia el valor de los campos en la tabla
-        //kFoot.setText( valuePie );
-        //kKnee.setText( valueRodilla );
-        //kLace.setText( valueEncaje );
-        //kSubjection.setText( valueSujecion );
 
     }
-
+    // K1
     private String getSujecion1(int equilibrio) {
         String result = "N.A";
 
@@ -210,6 +237,34 @@ public class ResultActivity extends AppCompatActivity {
     }
 
     private String getPie1(int fuerza) {
+
+        String result;
+        if(fuerza >=1 && fuerza< 3) {
+            result = "SACH foot";
+        }
+        else result = "N.A";
+        return result;
+    }
+    // K1 RODILLA
+    private String getSujecion11(int equilibrio) {
+        return "Pin / Shuttle";
+    }
+
+    private String getEncaje11(int sensibilidad) {
+        return "Quadrangular lace without ischial support. Narrow at supracondylar level";
+    }
+
+    private String getRodilla11(int movilidad) {
+
+        String result;
+        if(fuerza >=1 && fuerza< 3) {
+            result = "Polycentric";
+        }
+        else result = "N.A";
+        return result;
+    }
+
+    private String getPie11(int fuerza) {
 
         String result;
         if(fuerza >=1 && fuerza< 3) {
@@ -251,6 +306,41 @@ public class ResultActivity extends AppCompatActivity {
         }
         return result;
     }
+    //K2 RODILLA DESARTICULACION
+    private String getSujecion22(int equilibrio) {
+        return "Pin / Shuttle";
+    }
+
+    private String getEncaje22(int sensibilidad) {
+
+        return "Quadrangular lace without ischial support. Narrow at supracondylar level";
+    }
+
+    private String getRodilla22(int movilidad) {
+
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 5) {
+            result = "Polycentric";
+        }
+        return result;
+    }
+
+    private String getPie22(int fuerza) {
+
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 3) {
+            result = "SACH foot";
+        }
+        else if(fuerza >=3 && fuerza< 5) {
+            result = "Uniaxial foot";
+        }
+        else if(fuerza >=5 && fuerza< 7) {
+            result = "Multiaxial";
+        }
+        return result;
+    }
     //K3
     private String getSujecion3(int equilibrio) {
         return "Neoprene";
@@ -274,6 +364,33 @@ public class ResultActivity extends AppCompatActivity {
             result = "Uniaxial foot";
         }
         else if(fuerza >=5 && fuerza< 7) {
+            result = "Multiaxial";
+        }
+        return result;
+    }
+    // K3 DESARTICULACION RODILLA
+    private String getSujecion33(int equilibrio) {
+        return "Pin / Shuttle";
+    }
+
+    private String getEncaje33(int sensibilidad) {
+
+        return "Quadrangular lace without ischial support. Narrow at supracondylar level";
+    }
+
+    private String getRodilla33(int movilidad) {
+        String result = "N.A";
+        if (fuerza >= 3 && fuerza < 7) {
+            result = "Polycentric";
+        }
+        return result;
+    }
+
+    private String getPie33(int fuerza) {
+        String result = "N.A";
+        if (fuerza >= 3 && fuerza < 5) {
+            result = "Uniaxial foot";
+        } else if (fuerza >= 5 && fuerza < 7) {
             result = "Multiaxial";
         }
         return result;
@@ -305,6 +422,36 @@ public class ResultActivity extends AppCompatActivity {
             return "N.A";
         }
 
+    }
+    // K4 DESARTICULACION RODILLA
+    private String getSujecion44(int equilibrio) {
+        return "Pin / Shuttle";
+    }
+
+    private String getEncaje44(int sensibilidad) {
+
+        return "Quadrangular lace without ischial support. Narrow at supracondylar level";
+    }
+
+    private String getRodilla44(int movilidad) {
+
+        String result = "N.A";
+        if (fuerza >= 5 && fuerza < 10) {
+            result = "Polycentric";
+        }
+        return result;
+    }
+
+    private String getPie44(int fuerza) {
+
+        String result = "N.A";
+        if (fuerza >= 5 && fuerza < 7) {
+            result = "Multiaxial";
+        }
+        else if (fuerza >= 7 && fuerza < 10) {
+            result = "Absorption";
+        }
+        return result;
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
