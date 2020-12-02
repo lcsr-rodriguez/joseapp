@@ -91,7 +91,15 @@ public class ResultActivity extends AppCompatActivity {
 
                     break;
                 case "Disarticulated hip":
-
+                    valuePie = getPie1111(fuerza);
+                    valueRodilla = getRodilla1111(movilidad);
+                    valueEncaje = getEncaje1111(sensibilidad);
+                    valueSujecion = getSujecion1111(equilibrio);
+                    kIndex.setText("1");
+                    kFoot.setText(valuePie);
+                    kKnee.setText(valueRodilla);
+                    kLace.setText(valueEncaje);
+                    kSubjection.setText(valueSujecion);
                     break;
                 case "Hemilpevectomy":
 
@@ -138,7 +146,15 @@ public class ResultActivity extends AppCompatActivity {
                     kSubjection.setText(valueSujecion);
                     break;
                 case "Disarticulated hip":
-
+                    valuePie = getPie2222(fuerza);
+                    valueRodilla = getRodilla2222(movilidad);
+                    valueEncaje = getEncaje2222(sensibilidad);
+                    valueSujecion = getSujecion2222(equilibrio);
+                    kIndex.setText("2");
+                    kFoot.setText(valuePie);
+                    kKnee.setText(valueRodilla);
+                    kLace.setText(valueEncaje);
+                    kSubjection.setText(valueSujecion);
                     break;
                 case "Hemilpevectomy":
 
@@ -186,7 +202,15 @@ public class ResultActivity extends AppCompatActivity {
                     kSubjection.setText(valueSujecion);
                     break;
                 case "Disarticulated hip":
-
+                    valuePie = getPie3333(fuerza);
+                    valueRodilla = getRodilla3333(movilidad);
+                    valueEncaje = getEncaje3333(sensibilidad);
+                    valueSujecion = getSujecion3333(equilibrio);
+                    kIndex.setText("3");
+                    kFoot.setText(valuePie);
+                    kKnee.setText(valueRodilla);
+                    kLace.setText(valueEncaje);
+                    kSubjection.setText(valueSujecion);
                     break;
                 case "Hemilpevectomy":
 
@@ -234,7 +258,15 @@ public class ResultActivity extends AppCompatActivity {
                     kSubjection.setText(valueSujecion);
                 break;
                 case "Disarticulated hip":
-
+                    valuePie = getPie4444(fuerza);
+                    valueRodilla = getRodilla4444(movilidad);
+                    valueEncaje = getEncaje4444(sensibilidad);
+                    valueSujecion = getSujecion4444(equilibrio);
+                    kIndex.setText("4");
+                    kFoot.setText(valuePie);
+                    kKnee.setText(valueRodilla);
+                    kLace.setText(valueEncaje);
+                    kSubjection.setText(valueSujecion);
                 break;
                 case "Hemilpevectomy":
 
@@ -343,6 +375,45 @@ public class ResultActivity extends AppCompatActivity {
             result = "SACH foot";
         }
         else result = "N.A";
+        return result;
+    }
+    // K1 CADERA
+    private String getSujecion1111(int equilibrio) {
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 3) {
+            result = "Belt systems";
+        }
+        return result;
+    }
+
+    private String getEncaje1111(int sensibilidad) {
+
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 3) {
+            result = "UCLA anatomical prosthesis";
+        }
+        return result;
+    }
+
+    private String getRodilla1111(int movilidad) {
+
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 3) {
+            result = "Manual release knee";
+        }
+        return result;
+    }
+
+    private String getPie1111(int fuerza) {
+
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 3) {
+            result = "SACH foot";
+        }
         return result;
     }
 
@@ -458,6 +529,48 @@ public class ResultActivity extends AppCompatActivity {
         }
         return result;
     }
+    // K2 CADERA
+    private String getSujecion2222(int equilibrio) {
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 5) {
+            result = "Belt systems";
+        }
+        return result;
+    }
+
+    private String getEncaje2222(int sensibilidad) {
+
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 5) {
+            result = "UCLA anatomical prosthesis";
+        }
+        return result;
+    }
+
+    private String getRodilla2222(int movilidad) {
+
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 3) {
+            result = "Manual release knee";
+        }
+        else if(fuerza >=3 && fuerza< 5) {
+            result = "Polycentric with load brake";
+        }
+        return result;
+    }
+
+    private String getPie2222(int fuerza) {
+
+        String result = "N.A";
+
+        if(fuerza >=1 && fuerza< 5) {
+            result = "SACH foot";
+        }
+        return result;
+    }
     //K3
     private String getSujecion3(int equilibrio) {
         return "Neoprene";
@@ -530,7 +643,7 @@ public class ResultActivity extends AppCompatActivity {
             result = "CAT-CAM ischial restraint socket. Soft interface (Liner)";
         }
         else if(fuerza >=5 && fuerza< 7) {
-            result = "4-axis pneumatic polycentric knee";
+            result = "Soft ISNY.Intersafe Flexible Lace (Liner)";
         }
         return result;
     }
@@ -543,7 +656,7 @@ public class ResultActivity extends AppCompatActivity {
             result = "Polycentric with load brake";
         }
         else if(fuerza >=5 && fuerza< 7) {
-            result = "Soft ISNY.Intersafe Flexible Lace (Liner)";
+            result = "4-axis pneumatic polycentric knee";
         }
         return result;
     }
@@ -557,6 +670,48 @@ public class ResultActivity extends AppCompatActivity {
         }
         else if(fuerza >=5 && fuerza< 7) {
             result = "Multiaxial";
+        }
+        return result;
+    }
+    // K3 CADERA
+    private String getSujecion3333(int equilibrio) {
+        String result = "N.A";
+
+        if(fuerza >=3 && fuerza< 7) {
+            result = "Belt systems";
+        }
+        return result;
+    }
+
+    private String getEncaje3333(int sensibilidad) {
+
+        String result = "N.A";
+
+        if(fuerza >=3 && fuerza< 7) {
+            result = "UCLA anatomical prosthesis";
+        }
+        return result;
+    }
+
+    private String getRodilla3333(int movilidad) {
+
+        String result = "N.A";
+
+        if(fuerza >=3 && fuerza< 5) {
+            result = "Polycentric with load brake";
+        }
+        else if(fuerza >=5 && fuerza< 7) {
+            result = "4-axis pneumatic polycentric knee";
+        }
+        return result;
+    }
+
+    private String getPie3333(int fuerza) {
+
+        String result = "N.A";
+
+        if(fuerza >=3 && fuerza< 7) {
+            result = "SACH foot";
         }
         return result;
     }
@@ -657,6 +812,45 @@ public class ResultActivity extends AppCompatActivity {
         }
         else if(fuerza >=7 && fuerza< 10) {
             result = "Energy absorption or storage";
+        }
+        return result;
+    }
+    // K4 CADERA
+    private String getSujecion4444(int equilibrio) {
+        String result = "N.A";
+
+        if(fuerza >=5 && fuerza< 10) {
+            result = "Belt systems";
+        }
+        return result;
+    }
+
+    private String getEncaje4444(int sensibilidad) {
+
+        String result = "N.A";
+
+        if(fuerza >=5 && fuerza< 10) {
+            result = "UCLA anatomical prosthesis";
+        }
+        return result;
+    }
+
+    private String getRodilla4444(int movilidad) {
+
+        String result = "N.A";
+
+        if(fuerza >=5 && fuerza< 10) {
+            result = "4-axis pneumatic polycentric knee";
+        }
+        return result;
+    }
+
+    private String getPie4444(int fuerza) {
+
+        String result = "N.A";
+
+        if(fuerza >=5 && fuerza< 10) {
+            result = "SACH foot";
         }
         return result;
     }
