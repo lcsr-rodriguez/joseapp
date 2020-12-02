@@ -124,7 +124,7 @@
                     android:textColor="@color/labels"
                     android:textStyle="bold"
                     android:paddingLeft="10dp"
-                    android:text="Height :"
+                    android:text="Weight :"
                     android:textSize="13sp" />
 
             </LinearLayout>
@@ -152,7 +152,7 @@
                     android:layout_weight="1"
                     android:ems="10"
                     android:inputType="numberSigned"
-                    android:hint="Enter your height (cm)"
+                    android:hint="Enter your weight (kg)"
                     android:textSize="15sp" />
 
             </LinearLayout>

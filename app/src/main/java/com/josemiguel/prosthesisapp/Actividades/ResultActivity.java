@@ -335,11 +335,10 @@ public class ResultActivity extends AppCompatActivity {
 
     private String getPie1(int fuerza) {
 
-        String result;
+        String result = "N.A";
         if(fuerza >=1 && fuerza< 3) {
             result = "SACH foot";
         }
-        else result = "N.A";
         return result;
     }
     // K1 RODILLA

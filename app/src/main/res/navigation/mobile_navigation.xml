@@ -19,15 +19,15 @@
 
     <activity
         android:id="@+id/nav_personal"
-        android:name="com.josemiguel.prosthesisapp.Actividades.PersonalActivity"
+        android:name="com.josemiguel.prosthesisapp.Actividades.DoctorActivity"
         android:label="Personal Information"
-        tools:layout="@layout/activity_personal" />
+        tools:layout="@layout/activity_doctor" />
 
     <activity
         android:id="@+id/nav_medical"
-        android:name="com.josemiguel.prosthesisapp.Actividades.MedicalActivity"
+        android:name="com.josemiguel.prosthesisapp.Actividades.DoctorActivity"
         android:label="Medical Information"
-        tools:layout="@layout/activity_medical" />
+        tools:layout="@layout/activity_doctor" />
 
     <activity
         android:id="@+id/nav_about"
